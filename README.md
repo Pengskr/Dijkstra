@@ -46,7 +46,7 @@
 > 版权声明：本文为CSDN博主「wjyGrit」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。  
 > 原文链接：https://blog.csdn.net/qq_45776662/article/details/107177424
 
-## 2. Dijkstra 与 动态规划 对比
+## 2. Dijkstra 与 动态规划 的联系与区别
 [TODO]
 
 ## 3. 文件说明
