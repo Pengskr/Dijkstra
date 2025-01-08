@@ -8,7 +8,11 @@
 - 已访问节点(已找到到源点的最短路径 如 Dijkstra_matlab 中的蓝点，Dijkstra_python.ipynb中的CLOSED列表中的点)
 - 未访问节点
   - 已被检测到的节点(与 已检查节点 有连接关系 如 Dijkstra_matlab 中的黄点，Dijkstra_python.ipynb中的OPEN列表中的点)
-  - 未被检测到的节点(与 已检查节点 无连接关系 如 Dijkstra_matlab 中的白点)
+  - 未被检测到的节点(与 已检查节点 无连接关系 如 Dijkstra_matlab 中的白点)  
+
+特点：  
+- **最优性**：保证找到最短路径  
+- 计算成本：计算代价高，适合规模较小的全局路径规划，不适合实时规划。
 
 ## 1. Dijkstra算法的基本思想  
 > ### 解释1 （参考：[DSA Dijkstra's Algorithm (一个直观的教程)](https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php)）
