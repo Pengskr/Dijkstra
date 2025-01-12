@@ -10,12 +10,7 @@
   - 已被检测到的节点(与 已检查节点 有连接关系 如 Dijkstra_matlab 中的黄点，Dijkstra_python.ipynb中的OPEN列表中的点)
   - 未被检测到的节点(与 已检查节点 无连接关系 如 Dijkstra_matlab 中的白点)  
 
-特点：  
-- **最优性**：保证找到最短路径  
-- 计算成本：计算代价高，适合规模较小的全局路径规划，不适合实时规划。  
-  Dijikstra算法的时间复杂度为$O(n^2)$，空间复杂度为$O(n^2)$，其中n为图中节点的数目。当图为开放空间，甚至是各边权重均相等的条件下，效率会较差。
-
-## 1. Dijkstra算法的基本思想  
+## 1. Dijkstra算法的基本步骤  
 > ### 解释1 （参考：[DSA Dijkstra's Algorithm (一个直观的教程)](https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php)）
 > 1. Set initial distances for all vertices: 0 for the source vertex, and infinity for all the other.  
 > 对所有节点设置初始距离：源点的初始距离为0，其他节点的初始距离为∞。  
@@ -29,7 +24,6 @@
 > 回到步骤2，选择一个新的当前节点，重复后续步骤直到所有节点被访问或者终点被访问。  
 > 6. In the end we are left with the shortest path from the source vertex to every other vertex in the graph.  
 > 最后得到源点到所有其他节点的最短路径。
-
 
 > ### 解释2
 > 首先假定源点为u，顶点集合V被划分为两部分：集合 S 和 V-S。  
@@ -52,6 +46,11 @@
 > ————————————————  
 > 版权声明：本文为CSDN博主「wjyGrit」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。  
 > 原文链接：https://blog.csdn.net/qq_45776662/article/details/107177424
+
+### 特点：  
+- **最优性**：保证找到最短路径  
+- 计算成本：计算代价高，适合规模较小的全局路径规划，不适合实时规划。  
+  Dijikstra算法的时间复杂度为$O(n^2)$，空间复杂度为$O(n^2)$，其中n为图中节点的数目。当图为开放空间，甚至是各边权重均相等的条件下，效率会较差。
 
 ## 2. Dijkstra 与 动态规划 的联系与区别
 [TODO]
